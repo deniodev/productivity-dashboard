@@ -237,3 +237,63 @@ body.sidebar-open #overlay {
   display: grid;
   place-content: center;
 }
+
+
+/* Desktop Version*/
+@media  screen and (min-width: 600px) {
+    #main-header__sidebar-toggle {
+        display: none;
+    }
+
+    #main-header__logo {
+        display: block;
+    }
+
+    #main-header svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    #main-header__logo svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #main-header a {
+        text-decoration: none;
+        gap: .5rem;
+    }
+
+    #main-header a span {
+        display: inline-block;
+        font-size: 81.25%;
+        color: var(--main-header-link-color);
+    }
+
+    #sidebar {
+        position: relative;
+        transform: none;
+    }
+
+    #main {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    #sidebar__collapse {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding: .75rem;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        font-size: 81.25%;
+        color: var(--primary-base);
+        cursor: pointer;
+    }
+
+    #sidebar__collapse svg {
+        fill: var(--primary-base);
+    }
+}
