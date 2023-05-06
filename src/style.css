@@ -1,3 +1,49 @@
-body {
-    background-color: #fff;
+:root {
+  --gray-base: #202430;
+  --gray-shade-60: #13161d;
+  --gray-tint-30: #63666e;
+  --gray-tint-50: #909298;
+  --gray-tint-80: #d2d3d6;
+  --gray-alpha-80: rgb(32 36 48 / 0.8); /* CSS Colors Level 4 */
+  --gray-tint-90: #e9e9ea;
+  --white-base: #fff;
+  --primary-base: #358fe6;
+  --extras-sun: #ffd371;
+  --extras-moon: #7190ff;
+  --extras-black-alpha-64: rgb(0 0 0 / 0.64);
+  --extras-white-alpha-64: rgb(255 255 255 / 0.64);
+}
+
+:root[data-theme="dark"] {
+  --main-header-bg: var(--gray-shade-60);
+  --top-bar-icon-fill: var(--gray-tint-80);
+  --sidebar-bg: var(--gray-base);
+  --sidebar-icon-fill: var(--gray-tint-50);
+  --sidebar-icon-active-fill: var(--white-base);
+  --sidebar-link-color: var(--gray-tint-50);
+  --sidebar-link-active-color: var(--white-base);
+  --sidebar-menu-heading-color: var(--gray-tint-30);
+  --theme-switcher-bg: var(--gray-shade-60);
+  --theme-switcher-indicator: var(--extras-moon);
+  --theme-switcher-indicator-pos: 3.25rem;
+  --sun-icon-fill: var(--gray-tint-30);
+  --moon-icon-fill: var(--extras-white-alpha-64);
+  --main-header-link-color: var(--gray-tint-80);
+}
+
+:root[data-theme="light"] {
+  --main-header-bg: var(--gray-tint-80);
+  --top-bar-icon-fill: var(--gray-base);
+  --sidebar-bg: var(--gray-tint-90);
+  --sidebar-icon-fill: var(--gray-tint-50);
+  --sidebar-icon-active-fill: var(--gray-base);
+  --sidebar-link-color: var(--gray-tint-50);
+  --sidebar-link-active-color: var(--gray-base);
+  --sidebar-menu-heading-color: var(--gray-tint-50);
+  --theme-switcher-bg: var(--gray-tint-80);
+  --theme-switcher-indicator: var(--extras-sun);
+  --theme-switcher-indicator-pos: 0.25rem;
+  --sun-icon-fill: var(--extras-black-alpha-64);
+  --moon-icon-fill: var(--gray-tint-50);
+  --main-header-link-color: var(--gray-base);
 }
