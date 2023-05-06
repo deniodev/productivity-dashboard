@@ -47,3 +47,57 @@
   --moon-icon-fill: var(--gray-tint-50);
   --main-header-link-color: var(--gray-base);
 }
+
+/* General Style */
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  color: var(--gray-base);
+}
+
+/* Main header */
+#main-header {
+  background-color: var(--main-header-bg);
+  padding: 1rem 1.5rem;
+}
+
+#main-header nav,
+#main-header ul,
+#main-header a {
+  display: flex;
+  align-items: center;
+}
+
+#main-header nav {
+  justify-content: space-between;
+}
+
+#main-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+#main-header svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--top-bar-icon-fill);
+}
+
+#toggle-icon-close,
+#main-header__logo,
+#main-header a span {
+  display: none;
+}
+
+#main-header__sidebar-toggle {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
