@@ -11,6 +11,18 @@ const sidebarTrigger = document.getElementById('main-header__sidebar-toggle');
 // Add the event listener
 sidebarTrigger.addEventListener('click', sidebarToggle);
 
+// Sidebar collapse function
+const sidebarCollapse = () => {
+    document.body.classList.toggle('sidebar-collapsed');
+  };
+  
+  // Sidebar trigger
+  const sidebarCollapseTrigger = document.getElementById
+  ('sidebar__collapse');
+  
+  // Add the event listener
+  sidebarCollapseTrigger.addEventListener('click', sidebarCollapse);
+
 //Theme switcher function
 const switchTheme = () => {
     //Get root element and data-theme value
